@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.header {
+    height: 400px;
+    background-image: url("images/coffee-bgnd.jpeg");
+    background-position: center;
+    /*padding-top: 115px;*/
+    /*box-sizing: border-box;*/
+}
+
+/*Только для h1, который является наследником header*/
+.header > h1 {
+    font-size: 100px;
+    font-family: 'Covered By Your Grace', cursive;
+    color: rgba(3, 150, 100, 0.75);
+    text-align: center;
+    padding-top: 115px;
+}
+
+.main {
+    margin: 10px 0;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 28px;
+    background-color: #aa8eb5;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid black;
+}
+
+p {
+    color: #454;
+    font-weight: 500;
+    text-align: justify;
+    padding: 0 20px;
+    /*Отступ первого слова*/
+    text-indent: 32px;
+    line-height: 1.5;
+}
+
+/*Links style*/
+.main div > a:link {
+    color: #214e34;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0 20px;
+}
+
+.main div > a:hover {
+    color: red;
+}
+
+.main div > a:visited {
+    color: blue;
+}
+
+.main div > a:active {
+    color: #e8ff00;
+}
+
+/*Positioning*/
+/*First row*/
+div .f_row > .left_el {
+    position: absolute;
+    left: 0;
+    width: 50%;
+}
+
+div .f_row > .right_el {
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+/*Second row*/
+div .s_row > .left_el {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    top: 200px;
+}
+
+div .s_row > .right_el {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 200px;
+}
+
+/*Third row*/
+div .t_row > .left_el {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    top: 400px;
+}
+
+div .t_row > .right_el {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 400px;
+}
